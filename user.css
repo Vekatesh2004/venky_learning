@@ -1,0 +1,144 @@
+body{
+margin:0;
+font-family:Arial, sans-serif;
+color:white;
+}
+
+/* Navbar */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+position:absolute;
+width:100%;
+z-index:2;
+}
+
+.navbar a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-size:16px;
+}
+
+.navbar a:hover{
+color:#4CAF50;
+}
+
+
+/* Hero Section */
+
+.hero{
+height:100vh;
+background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMdeET-5A7AUi-wQsBU96zLkuybP6QaPosCA&s");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+}
+
+.hero-content{
+position:relative;
+max-width:700px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+}
+
+
+/* Search box */
+
+input{
+padding:12px;
+width:60%;
+border:none;
+border-radius:5px;
+margin-right:10px;
+}
+
+button{
+padding:12px 20px;
+background:#4CAF50;
+border:none;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#45a049;
+}
+
+.explore-btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#2ecc71;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+
+/* Tools section */
+
+.tools{
+padding:60px;
+background:#f4f6f9;
+color:#333;
+text-align:center;
+}
+
+.tool-box{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:30px;
+width:250px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+margin-bottom:10px;
+color:#2c3e50;
+}
+
+.card p{
+font-size:14px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#2c3e50;
+color:white;
+}
